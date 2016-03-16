@@ -12,7 +12,7 @@ def init_arr(N):
 def switch_arr(arr,start,stop):
     if (stop < start):
         stop,start = start,stop
-    for i in range(start,stop):
+    for i in range(start,stop+1):
         arr[i] = not arr[i]
     return arr
 
@@ -47,7 +47,7 @@ def real_main(arg):
     left = split_array(arg,0)
     for i in range(0,len(right)):
         answer_array = switch_arr(answer_array,int(right[i]),int(left[i]))
-    return find_true(answer_array)
+    return answer_array,find_true(answer_array)
 
 if __name__ == '__main__':
     print(real_main(sys.argv[1]));
