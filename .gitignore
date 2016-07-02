@@ -154,3 +154,7 @@ jspm_packages
 ### Mac ### 
 
 typescript
+
+# Mongodb
+
+.db_data
